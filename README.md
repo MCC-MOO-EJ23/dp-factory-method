@@ -42,6 +42,10 @@ Solución con el patrón Factory Method:
 
 ## Ejecucion
 
+### Comando para levantar el contenedor a partir de la imagen Docker en Github
+```
+docker run --detach --name=posmysql --publish 3306:3306 ghcr.io/mcc-moo-ej23/dp-factory-method/product-mysql:latest
+```
 ### Comando para crear el contenedor MySQL 
 ```
 cd dockermysql
