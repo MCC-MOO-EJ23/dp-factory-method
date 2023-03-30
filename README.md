@@ -61,6 +61,11 @@ docker run --detach --name=posmysql --publish 3306:3306 pos-mysql:0.1
 1. clic en la opción en la opción ```Database``` de la barra de herramientas izquierda. Clic en ```Create connection```.
 2. Selecciona ```MySql```. Usa los valores por default y sólo captura el password: ```1234```. Clic en ```Connect```. Revisa la base de datos ```pos``` en el explorador de bases de datos del lado izquierdo.
 
+## Comando para levantar el contenedor a partir de la imagen Docker en Github
+```
+docker run -d -p 1521:1521 -e ORACLE_PASSWORD=SysPassword1 -v oracle-volume:/opt/oracle/XE21CFULL/oradata ghcr.io/mcc-moo-ej23/dp-factory/product-oracle:latest
+```
+
 ### Comandos para crear el contenedor Oracle
 ```
 docker pull gvenzl/oracle-xe:21-full
