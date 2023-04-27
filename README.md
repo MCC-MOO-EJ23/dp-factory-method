@@ -42,7 +42,7 @@ Solución con el patrón Factory Method:
 
 ## Ejecucion
 
-### Comando para levantar el contenedor MySQL a partir de la imagen Docker en Github
+### (Empieza por aquí) Comando para levantar el contenedor MySQL a partir de la imagen Docker en Github
 ```
 docker run --detach --name=posmysql --publish 3306:3306 ghcr.io/mcc-moo-ej23/dp-factory-method/product-mysql:latest
 ```
@@ -61,7 +61,7 @@ docker run --detach --name=posmysql --publish 3306:3306 pos-mysql:0.1
 1. clic en la opción en la opción ```Database``` de la barra de herramientas izquierda. Clic en ```Create connection```.
 2. Selecciona ```MySql```. Usa los valores por default y sólo captura el password: ```1234```. Clic en ```Connect```. Revisa la base de datos ```pos``` en el explorador de bases de datos del lado izquierdo.
 
-## Comando para levantar el contenedor Oracle a partir de la imagen Docker en Github
+## (Empiece por aquí) Comando para levantar el contenedor Oracle a partir de la imagen Docker en Github
 ```
 docker run -d -p 1521:1521 -e ORACLE_PASSWORD=SysPassword1 -v oracle-volume:/opt/oracle/XE21CFULL/oradata ghcr.io/mcc-moo-ej23/dp-factory/product-oracle:latest
 ```
@@ -77,7 +77,7 @@ docker run -d -p 1521:1521 -e ORACLE_PASSWORD=SysPassword1 -v oracle-volume:/opt
 1. clic en la opción ```Database``` de la barra de herramientas izquierda. Clic en ```Create connection```.
 2. Selecciona ```Oracle```. Usa los valores por default y sólo captura el password: ```SysPassword1 ``` (con espacio al final). Clic en ```Connect```.
 3. Ir al script ```pos.sql``` en el Explorador de Archivos. Clic en ```Execute```.
-4. Refresca las tablase de la opción ```Database```. La tabla ```Productos``` vacía debe mostrarse.
+4. Refresca las tablas de la opción ```Database```. La tabla ```Productos``` vacía debe mostrarse.
 
 ### Ejecutar Java-App 
 
